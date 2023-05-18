@@ -12,53 +12,28 @@
 </head>
 <body>
 <!-- create the navbar -->
-<nav class="menu-container">
-    <!-- burger menu -->
-    <input type="checkbox" aria-label="Toggle menu" />
-    <span></span>
-    <span></span>
-    <span></span>
-  
-    <!-- logo -->
-    <a href="#" class="menu-logo">
-        <img src=".//asset/logo.png" alt="logo">
-    </a>
-  
-    <!-- menu items -->
-    <div class="menu">
-      <ul>
-        <li>
-          <a href="#signup">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="#login">
-            Contact Us
-          </a>
-        </li>
-        <li>
-            <a href="#login">
-              Sign in
-            </a>
-          </li>
-      </ul>
-    </div>
-  </nav>
-<!-- <nav>
-    <div class="flex-container">
-        <div id="menu-left">
-            <img src=".//asset/logo.png" alt="logo">
-        </div>
-            <img src="hamburger menu more navigation icon.png" alt="" class="menu-toggle">
-        
-        <div id="menu-right" class="hide">
-            <a href="#"class="menu-items">Blog</a>
-            <a href="#"class="menu-items">Contact Us</a>
-            <a href="#"class="menu-items">Sign in</a>
-        </div>
-    </div>
-</nav> -->
+<header class="primary-header flex">
+    <div> <img src="./asset/logo.png" alt="" class="logo"></div>
+
+
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+    <nav>
+    <ul id="primary-navigation" data-visible = "false" class="primary-navigation flex">
+        <li class="active">
+             <a href="#">Blog</a>
+         </li>
+         <li class="active">
+             <a href="#">Contact Us</a>
+         </li>
+         <li class="active">
+             <a href="#">Sign Up</a>
+         </li>
+     </ul>
+    </nav>
+</header>
+
 <!-- create the hero section -->
 <div id="hero">
     <div class="hero-text">
@@ -263,10 +238,60 @@
         <ul>
             <li><a href="#">Lorem Ipsum</a></li>
         </ul>
-    </div>    
-    <div class="mobile-footer">
-        
+    </div>  
+    <div class="mobile-footer-container">
+        <div class="mobile-footer">
+            <div>
+                <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>  
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>  
+                </ul> 
+            </div>
+        </div>    
+        <a href="#"><span>LOREM IPSUM DOLAR</span></a>
+        <div class="mobile-footer">
+            <div>
+                <ul>
+                     <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li> 
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Lorem Ipsum</a></li> 
+                </ul> 
+            </div>
+    
     </div>
+    </div>
+    <div class="tablet-footer-container">
+        <div class="tablet-footer">
+            <ul>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+
+        </div>
+        <div class="tablet-footer">
+            <ul>
+                <li><a href="#"><span>LOREM IPSUM DOLAR</span></a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+        </div>
+    </div>  
+    
 </footer>
 
 
